@@ -1,0 +1,423 @@
+* {
+  font-family: "IBM Plex Serif";
+}
+body {
+  margin: 0;
+  font-family: "IBM Plex Serif";
+}
+
+a {
+  text-decoration: none;
+  color: rgba(27, 146, 255, 1);
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+}
+
+#headercontainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 16px;
+}
+
+/* add */
+.header_logo:hover {
+  cursor: pointer;
+}
+
+.header_logo i {
+  font-size: 30px;
+  color: rgba(27, 146, 255, 1);
+}
+
+.header_logo span {
+  margin: 0px auto 0px 10px;
+  font-size: 24px;
+  color: #303030;
+  font-family: "Gowun Dodum", serif;
+  font-weight: bold;
+}
+
+/* right links */
+.header_links {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  padding: 0px;
+}
+
+.header_links li {
+  margin-left: 10px;
+}
+
+.header_links li a i {
+  color: rgba(27, 146, 255, 1);
+}
+
+/* add */
+.header_links li a i:hover {
+  color: rgb(24, 65, 209);
+}
+
+/* navbar */
+.navbar {
+  /* background-color: yellowgreen; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.navbar_menu {
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px 16px;
+}
+
+/* join us text fix */
+.navbar_menu li {
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 250ms;
+}
+
+/* members 페이지에서 선택된 상태 */
+.navbar_menu li:nth-child(2) {
+  transform: translateY(-8px);
+  scale: 120%;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 250ms;
+}
+/* 선택된 페이지 a */
+#members {
+  color: rgb(24, 65, 209);
+}
+
+/* 다른 메뉴들 선택시 */
+.navbar_menu li:hover {
+  transform: translateY(-8px);
+
+  scale: 120%;
+  font-weight: bold;
+}
+
+.navbar_menu a:hover {
+  color: rgb(24, 65, 209);
+}
+
+/* main */
+main {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#cardSlot {
+  width: 80%;
+  max-width: 1000px;
+  margin-top: 30px;
+  padding: 20px;
+  background-color: rgba(145, 217, 252, 0.46);
+  border: 1px rgba(27, 146, 255, 1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(27, 146, 255, 1);
+  display: flex;
+  flex-direction: row;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: center;
+}
+
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 756px) {
+  .header_logo {
+    flex-wrap: wrap;
+  }
+  .logo_title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_title span {
+    font-size: 20px;
+    font-weight: bold;
+  }
+}
+
+
+.card.opened {
+    width: 100%;
+    max-width: inherit;
+    max-height: 1800px;
+    border: 2px solid #000;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 16px auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+}
+
+.card {
+    width: 100%;
+    overflow-x: clip;
+    max-width: inherit;
+    max-height: 350px;
+    border: 1px solid #cfe2ff;
+    border-radius: 8px;
+    padding: 40px;
+    margin: 16px auto;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    box-shadow: 2px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: max-height 0.3s ease-in-out;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    font-family: "Noto Sans KR", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.odd .introImg {
+  display: grid;
+  grid-template-areas:
+  "image name mbti"
+  "image blog blog"
+  "image github github";
+  grid-template-columns: auto auto 1fr;
+  grid-auto-rows: min-content;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 16px;
+}
+
+
+.even .introImg {
+  display: grid;
+  grid-template-areas:
+      "name mbti image"
+      "blog blog image"
+      "github github image";
+  grid-template-columns: 1fr auto auto;
+  grid-auto-rows: min-content;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 16px;
+}
+
+
+
+
+.odd {
+    align-items: flex-start;
+    text-align: left;
+    margin-left: 0;
+    margin-right: auto;
+    width: 100%;
+    overflow: hidden;
+}
+
+
+.even {
+    align-items: flex-end;
+    text-align: right;
+    margin-left: auto;
+    margin-right: 0;
+    width: 100%;
+    overflow: hidden;
+}
+
+img {
+    width : 200px;
+    height : 200px;
+    grid-area: image;
+    border: 1px solid black;
+    border-radius: 8px;
+    transition: width 0.3s ease-in-out, height 0.3s ease-in-out;
+}
+
+.name {
+  grid-area: name;
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 38px;
+  font-style: normal;
+}
+
+.mbti {
+  grid-area: mbti;
+  font-family: "Noto Sans KR", serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-size: 38px;
+  font-style: normal;
+}
+
+.blog {
+  grid-area: blog;
+}
+
+.github {
+  grid-area: github;
+}
+
+@media screen and (max-width: 768px) {
+  .even .introImg {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "image"
+          "name"
+          "mbti"
+          "blog"
+          "github";
+      justify-content: center;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .odd .introImg {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+          "image"
+          "name"
+          "mbti"
+          "blog"
+          "github";
+      justify-content: center;
+  }
+}
+
+.opened img{
+    width: 350px;
+    height: 350px;
+}
+
+#input {
+    display : none;
+}
+
+.extendBtn,
+.saveBtn,
+.deleteBtn,
+.editBtn
+{
+    padding-top: 5px;
+    width: auto;
+    border: 1px solid #b8d5ff;
+    background-color: rgba(145, 217, 252, 0.46);
+    color: rgba(27, 146, 255, 1);
+    height: 30px;
+    border-radius: 50%;
+}
+
+.odd .extendBtn{
+    position: absolute;
+    bottom: 16px;
+    right: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.odd .saveBtn{
+  position: absolute;
+  top: 16px;
+  right: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.odd .editBtn{
+  position: absolute;
+  top: 16px;
+  right: 58px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.odd .deleteBtn{
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.even .extendBtn{
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.even .saveBtn{
+position: absolute;
+top: 16px;
+left: 58px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+.even .editBtn{
+position: absolute;
+top: 16px; 
+left: 58px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+.even .deleteBtn{
+position: absolute;
+top: 16px; 
+left: 16px;
+display: flex;
+flex-direction: column;
+gap: 8px;
+}
+
+[data-field="name"] {
+  margin-bottom: 0;
+}
+
+[data-field="mbti"] {
+  margin-bottom: 0;
+}

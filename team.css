@@ -1,0 +1,213 @@
+/* * {font-family: 'IBM Plex Serif';} */
+body {
+  margin: 0;
+  font-family: 'IBM Plex Serif';
+  
+}
+
+a {
+  text-decoration: none;
+  color: rgba(27, 146, 255, 1);
+}
+
+li {
+  list-style: none;
+}
+
+/* header */
+header {
+  /* background-color: cadetblue; */
+  display: flex;
+  justify-content: center;
+}
+
+#headercontainer {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.header_logo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 16px ;
+}
+
+/* add */
+.header_logo:hover {
+  cursor: pointer;
+}
+
+.header_logo i {
+  font-size: 30px;
+  color: rgba(27, 146, 255, 1);
+}
+
+.header_logo span {
+  margin: 0px auto 0px 10px;
+  font-size: 24px;
+  color: #303030;
+  font-family: "Gowun Dodum", serif;
+  font-weight: bold;
+}
+
+/* right links */
+.header_links {
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  margin: 16px;
+  padding: 0px;
+}
+
+.header_links li {
+  margin-left: 10px;
+}
+
+.header_links li a i {
+  color: rgba(27, 146, 255, 1);
+}
+
+/* add */
+.header_links li a i:hover {
+  color: rgb(24, 65, 209);
+}
+
+/* navbar */
+.navbar {
+  /* background-color: yellowgreen; */
+  width:100%;
+  display: flex;
+  flex-direction: row;
+  align-self: flex-end;
+}
+
+.navbar_menu{
+  /* background-color: yellow; */
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  margin: 0px 16px;
+}
+
+/* join us text fix */
+.navbar_menu li {
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 250ms;
+}
+
+/* team 페이지에서 선택된 상태 */
+.navbar_menu li:nth-child(1) {
+  transform: translateY(-8px);
+  scale: 120%;
+  font-weight: bold;
+  padding: 10px 16px;
+  font-size: 24px;
+  font-weight: 600;
+  transition: transform 250ms;
+}
+/* 선택된 페이지 a */
+#team{
+  color: rgb(24, 65, 209);
+}
+
+/* 다른 메뉴들 선택시 */
+.navbar_menu li:hover {
+  transform: translateY(-8px);
+
+  scale: 120%;
+  font-weight: bold;
+}
+
+.navbar_menu a:hover {
+  color: rgb(24, 65, 209);
+}
+
+/* main */
+main {
+  /* background-color: aquamarine; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  width: 80%;
+  margin-top: 30px;
+  padding: 20px;
+  border: 1px rgba(27, 146, 255, 1);
+  border-radius: 8px;
+  box-shadow: 0px 0px 4px rgba(27, 146, 255, 1);
+  /* background-color: rgb(216, 216, 21); */
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  flex-flow: column nowrap;
+  align-items: stretch;
+  justify-content: space-around;
+  gap: 4px;
+}
+
+.teamname {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 8px;
+  font-family: "Gowun Dodum", serif;
+  font-size: 28px;
+}
+
+.accordion-header button {
+  font-family: 'Gowun Dodum';
+}
+
+.accordion-header button i {
+  color: rgba(27, 146, 255, 1);
+  margin-right: 5px;
+}
+.accordion-body {
+  font-family: 'Gowun Dodum';
+}
+
+.accordion-body i {
+  margin-right: 5px;
+  color: rgba(27, 146, 255, 1);
+}
+.accordion-body p {
+  margin: 0px;
+  font-style: italic;
+}
+
+@media screen and (max-width:756px){
+  
+  .header_logo {
+    flex-wrap: wrap;
+  }
+  .logo_title {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .logo_title span{
+    font-size: 20px;
+    font-weight: bold;
+  }
+
+  .teamname {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
