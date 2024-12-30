@@ -138,6 +138,7 @@ header {
 /* main */
 main {
   /* background-color: aquamarine; */
+  background: linear-gradient( white 50%, rgba(27, 145, 255, 0.6) 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -146,6 +147,7 @@ main {
 .container {
   width: 80%;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   border: 1px rgba(27, 146, 255, 1);
   border-radius: 8px;

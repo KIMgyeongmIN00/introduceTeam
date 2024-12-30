@@ -139,6 +139,7 @@ header {
 /* main */
 main {
   /* background-color: aquamarine; */
+  background: linear-gradient( white 50%, rgba(27, 145, 255, 0.6) 50%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -147,7 +148,9 @@ main {
 .container {
   width: 80%;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
+  background-color: white;
   border: 1px rgba(27, 146, 255, 1);
   border-radius: 8px;
   box-shadow: 0px 0px 4px rgba(27, 146, 255, 1);
@@ -189,13 +192,20 @@ h1 {
 
 #searchButton {
   margin-left: 10px;
+  color: #303030;
+  background: #cfe2ff;
+  border: 1px solid #cfe2ff;
+}
+
+#searchButton:hover {
+  background: rgba(27, 145, 255, 0.816);
 }
 
 #searchKeyword{
   height: 40px;
   width: 70%;
   padding: 1px 10px;
-  border: 1px solid #0Dcaf0;
+  border: 1px solid #cfe2ff;
 }
 
 .news-item {
@@ -203,6 +213,10 @@ h1 {
   border: 1px solid #ddd;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.news-item:hover {
+  background-color: #e8f0fe46;
 }
 
 .news-item h2 {

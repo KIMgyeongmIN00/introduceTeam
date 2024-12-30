@@ -1,9 +1,12 @@
 * {
   font-family: "IBM Plex Serif";
 }
+
+
 body {
   margin: 0;
   font-family: "IBM Plex Serif";
+  background: linear-gradient( white 50%, rgba(27, 145, 255, 0.6) 50%);
 }
 
 a {
@@ -139,6 +142,7 @@ header {
 /* main */
 main {
   /* background-color: aquamarine; */
+  /* background: linear-gradient( white 50%, rgba(27, 145, 255, 0.6) 50%); */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -148,6 +152,7 @@ main {
   width: 80%;
   max-width: 1000px;
   margin-top: 30px;
+  margin-bottom: 30px;
   padding: 20px;
   background-color: rgba(145, 217, 252, 0.46);
   border: 1px rgba(27, 146, 255, 1);
@@ -263,8 +268,8 @@ main {
 }
 
 img {
-    width : 200px;
-    height : 200px;
+    width : 160px;
+    height : 160px;
     grid-area: image;
     border: 1px solid black;
     border-radius: 8px;
@@ -276,7 +281,7 @@ img {
   font-family: "Noto Sans KR", serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
 }
 
@@ -285,7 +290,7 @@ img {
   font-family: "Noto Sans KR", serif;
   font-optical-sizing: auto;
   font-weight: 800;
-  font-size: 38px;
+  font-size: 36px;
   font-style: normal;
 }
 
